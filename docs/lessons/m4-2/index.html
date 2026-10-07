@@ -1,0 +1,285 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>一致性策略 · 左叶 AI 学习手册</title><meta name="description" content="别再堆提示词！AI 视频稳定成片的核心是投喂参考素材"><meta name="theme-color" content="#18364b"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2318364b'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='34' fill='white'%3EAI%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="../../styles.css"><script defer src="../../app.js"></script></head><body><a href="#main" class="skip-link">跳转到正文</a><header class="mobile-head"><a class="brand" href="../../" aria-label="左叶 AI 学习手册首页"><span class="mark">AI</span>左叶<span style="font-size:13px;letter-spacing:0;font-weight:400;color:var(--muted)">学习手册</span></a><button class="menu-button" aria-expanded="false" aria-controls="site-sidebar">课程目录</button></header><aside class="sidebar" id="site-sidebar"><a class="brand" href="../../" aria-label="左叶 AI 学习手册首页"><span class="mark">AI</span>左叶<span style="font-size:13px;letter-spacing:0;font-weight:400;color:var(--muted)">学习手册</span></a><div class="brand-note">A FIELD GUIDE TO AI</div><p class="nav-label">学习路径</p><nav class="module-nav" aria-label="课程模块"><a href="../../#module-1" class=""><span class="nav-num">01</span>AI认知与探索</a><a href="../../#module-2" class=""><span class="nav-num">02</span>AI文字创作</a><a href="../../#module-3" class=""><span class="nav-num">03</span>AI商业视觉</a><a href="../../#module-4" class="active"><span class="nav-num">04</span>AI视频通识</a><a href="../../#module-5" class=""><span class="nav-num">05</span>Agent与自动化</a></nav><div class="sidebar-footer"><strong>从理解，到创造。</strong>28 篇图文课程已上线<br>持续更新中的 AI 学习手册</div></aside><main class="page" id="main"><div class="topline"><a class="back-link" href="../../#module-4">← 返回课程目录</a><span>模块 04 / 第 02 课</span></div><div class="reading-layout"><article><header class="article-header"><span class="eyebrow">AI视频通识</span><h1>一致性策略</h1><p class="subtitle">别再堆提示词！AI 视频稳定成片的核心是投喂参考素材</p><img class="article-cover" src="../../assets/4c7bc37f3d45788f28.webp" alt="一致性策略课程封面" width="1200" height="512"></header><div class="article-content"><h2 id="s-f9d25b1ab3">第一部分｜一致性从哪来</h2>
+<h3 id="s-04bff1fd54">01｜一致性的分类</h3>
+<blockquote>
+<p><strong>跨镜头不变，才叫一致性。</strong></p>
+</blockquote>
+<ul>
+<li><strong>角色一致</strong>：同一个人或物，跨镜头、跨动作外观不变。翻车的样子是转身后服装变了、动作一大就变形。靠一组角色参考图保持：形象、三视图、动作、道具。</li>
+<li><strong>场景一致</strong>：同一空间，位置关系与材质连贯。翻车的样子是物品消失、空间错位。靠一组空间参考图保持：正视图、俯视图、九宫格分镜。</li>
+<li><strong>风格一致</strong>：画风、光线、色调统一。翻车的样子是镜头之间质感跳变，像拼贴。靠统一的风格描述，加上同一套参考图自带的画风。</li>
+</ul>
+<p>重点是角色和场景两层。风格会跟着参考图一起稳定下来，不用单独处理。</p>
+<hr />
+<h3 id="s-c2b9caf313">02｜生成入口</h3>
+<blockquote>
+<p><strong>多镜头创作走全能参考，首尾帧模式留给单镜头。</strong></p>
+</blockquote>
+<p>我们进入即梦官网，选择 Seedance 2.0 来生成 AI 视频，可选择的生成模式主要分两种：首尾帧和全能参考，它们各有适合的任务。</p>
+<p>两个入口的分工：</p>
+<ul>
+<li><strong>首尾帧模式</strong>：输入是一张首帧或尾帧图，配一段文字。适合刚上手、只拍一个镜头、对首尾构图有明确要求的情况。</li>
+<li><strong>全能参考模式</strong>：图片、视频、音频、文字可以混着传。适合需要跨多个镜头保持角色和场景一致的创作。</li>
+</ul>
+<p>本文的赛博悟空和 Ye café 两个案例，都用全能参考模式完成。</p>
+<figure><img alt="即梦Seedance2.0全能参考入口" src="../../assets/f4e8b59e094bb31565.webp" loading="lazy" decoding="async"></figure>
+<p><em>即梦Seedance2.0全能参考入口</em></p>
+<hr />
+<h3 id="s-35ada38178">03｜一致性的四类素材</h3>
+<blockquote>
+<p><strong>画面稳不稳，取决于你锁住了几样。</strong></p>
+</blockquote>
+<p>全能参考模式能同时收四类素材，它们各自守一样东西：</p>
+<ul>
+<li><strong>文字 · 锁意图</strong>：谁在做什么，剧情与镜头怎么走。</li>
+<li><strong>图片 · 锁外观</strong>：角色形象、场景、道具长什么样。</li>
+<li><strong>视频 · 锁运动</strong>：动作、运镜、镜头节奏。</li>
+<li><strong>音频 · 锁节奏</strong>：配乐、语音、卡点。</li>
+</ul>
+<hr />
+<h3 id="s-bb7b3c363f">04｜三步调度素材</h3>
+<blockquote>
+<p><strong>素材一多，关键动作就变成了给每个素材指派用途。</strong></p>
+</blockquote>
+<ol>
+<li><strong>上传素材</strong>：把图片、视频、音频和文字一起传进去。</li>
+<li><strong>@素材名 指定用途</strong>：逐一点名，说清每个素材在这次生成里负责什么。</li>
+<li><strong>写提示词，生成</strong>：写清镜头和动作，一次生成。</li>
+</ol>
+<p>一次最多 9 张图片、3 段视频、3 段音频，合计不超过 12 个文件。</p>
+<p>数量有限，优先喂对一致性影响最大的素材。</p>
+<hr />
+<h3 id="s-228676c864">05｜投喂取代描述</h3>
+<blockquote>
+<p><strong>一致性不是描述出来的，是投喂出来的。</strong></p>
+</blockquote>
+<p>形容词要靠模型每次重新理解一遍。同一句「赤褐色毛发」，换个镜头可能得到不同深浅，而写出来的词再准，也只是对画面的转述。</p>
+<p>所以更稳的做法是<strong>用投喂取代描述</strong>：把参考图直接交给模型，图里是什么样，生成的镜头就该是什么样，不同镜头因此都对齐同一张图。</p>
+<hr />
+<h2 id="s-7c5759c892">第二部分｜锁住角色：赛博悟空案例</h2>
+<h3 id="s-fbb04c46fc">01｜备齐参考图</h3>
+<blockquote>
+<p><strong>开拍之前，把角色做成一组分工明确的参考图。</strong></p>
+</blockquote>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>参考图类型</th>
+<th>保持什么</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>形象图</td>
+<td>角色整体外观、服化道</td>
+<td>角色定妆正面像</td>
+</tr>
+<tr>
+<td>三视图</td>
+<td>正面、侧面、背面的一致外观</td>
+<td>角色三视图</td>
+</tr>
+<tr>
+<td>动作图</td>
+<td>特定姿态与动作</td>
+<td>蹲姿、扛棍行走</td>
+</tr>
+<tr>
+<td>道具图</td>
+<td>关键道具的最终形态</td>
+<td>武器 A、武器 B 的定型图</td>
+</tr>
+<tr>
+<td>场景图</td>
+<td>角色所处的环境</td>
+<td>大厅、最终城市</td>
+</tr>
+</tbody>
+</table></div>
+<p>这组图层层派生，每一张都基于同一张角色图长出来。</p>
+<hr />
+<h3 id="s-51c246262b">02｜赛博悟空案例</h3>
+<h4 id="s-4efc857c2b">案例总览</h4>
+<blockquote>
+<p><strong>一个角色定妆照，派生出一条片子要的所有画面。</strong></p>
+</blockquote>
+<ul>
+<li><strong>成片</strong>：一条 15 秒的 3A 游戏预告片，片名《大慈大悲加特林机关枪》。</li>
+<li><strong>形式</strong>：一镜到底，无剪辑。</li>
+<li><strong>叙事</strong>：从纯白 UI 影棚，走进雨夜赛博巨城。</li>
+<li><strong>风格</strong>：「西游记战将 × 高科技机甲」超写实 CGI。</li>
+</ul>
+<p>制作分四步，一步比一步具体：先定角色，派生动作与道具，合成界面与场景，最后生成视频。</p>
+<p>成片：《大慈大悲加特林机关枪》</p>
+<video src="../../assets/9ba87a8ea5b582d7ee.mp4" controls preload="metadata" playsinline></video>
+
+<h4 id="s-e69559757c">先定角色</h4>
+<blockquote>
+<p><strong>角色长什么样，在第一步就定死。</strong></p>
+</blockquote>
+<p>先生成角色形象图和三视图。赤褐色毛发、黑金机甲鳞片护甲、金色头冠与两根雉鸡翎，全部在这一步定下来。</p>
+<p>之后的每一张图、每一个镜头，都对齐这张脸。</p>
+<figure><img alt="赛博悟空角色形象图" src="../../assets/19747b0d403a4331b0.webp" loading="lazy" decoding="async"></figure>
+<p><em>赛博悟空角色形象图</em></p>
+<figure><img alt="赛博悟空角色三视图" src="../../assets/83d3f87c9ca6c2368d.webp" loading="lazy" decoding="async"></figure>
+<p><em>赛博悟空角色三视图</em></p>
+<h4 id="s-f982ddfb32">派生动作与道具</h4>
+<blockquote>
+<p><strong>姿态和道具都从同一个角色长出来。</strong></p>
+</blockquote>
+<p>用第一步的两张图，生成蹲姿、扛棍行走，以及两件武器的定型图。</p>
+<p>姿态和道具都不另起炉灶。</p>
+<figure><img alt="赛博悟空动作图蹲姿" src="../../assets/d8cf9129b8267fd3c7.webp" loading="lazy" decoding="async"></figure>
+<p><em>赛博悟空动作图蹲姿</em></p>
+<figure><img alt="赛博悟空道具图重型加特林" src="../../assets/fafbf7d58ecb581800.webp" loading="lazy" decoding="async"></figure>
+<p><em>赛博悟空道具图重型加特林</em></p>
+<figure><img alt="赛博悟空道具图如意金箍棒" src="../../assets/0eb19a0c465b704857.webp" loading="lazy" decoding="async"></figure>
+<p><em>赛博悟空道具图如意金箍棒</em></p>
+<h4 id="s-d4b61810cb">合成界面与场景</h4>
+<blockquote>
+<p><strong>每个镜头要的画面，提前备齐。</strong></p>
+</blockquote>
+<p>把角色放进游戏画面，生成四张界面与场景分镜图：开场菜单、武器面板、加载界面、最终城市。</p>
+<figure><img alt="赛博悟空开场菜单" src="../../assets/a68d7a891469d0b64d.webp" loading="lazy" decoding="async"></figure>
+<p><em>赛博悟空开场菜单</em></p>
+<figure><img alt="赛博悟空武器面板" src="../../assets/e6c54e25c7d51b59bc.webp" loading="lazy" decoding="async"></figure>
+<p><em>赛博悟空武器面板</em></p>
+<p>开场菜单与加载界面是同一个白色界面的两个状态。连界面也在讲一致性。</p>
+<figure><img alt="赛博悟空加载界面" src="../../assets/daf6c811758d0ca2d8.webp" loading="lazy" decoding="async"></figure>
+<p><em>赛博悟空加载界面</em></p>
+<figure><img alt="赛博悟空最终城市" src="../../assets/8e6823d862071e04f9.webp" loading="lazy" decoding="async"></figure>
+<p><em>赛博悟空最终城市</em></p>
+<h4 id="s-7394428013">一条提示词接起所有镜头</h4>
+<blockquote>
+<p><strong>每段镜头都直接指向一张已经做好的参考图。</strong></p>
+</blockquote>
+<p>提示词节选。【@图片：X】的作用，是把这一段镜头绑定到对应参考图：</p>
+<pre><code>【0s–2s】·【@图片3 开场菜单】  平视镜头。悟空蹲伏在白色地面上，望向镜头；光标点击 CONTINUE。
+【2s–5s】·【@图片4 武器A重型加特林】  菜单收拢，镜头推近。他摘下墨镜，耳中捏出小棍，层层展开重构成重型加特林。
+【5s–8s】·【@图片5 武器B如意金箍棒】  镜头环绕到另一侧，加特林逆向坍缩成金箍棒，他起身摆出蓄势姿态。
+【8s–11s】·【@图片6 加载界面】  点击 COMMIT，长棍横担双肩大步向前；LOADING 填到 100%，白色虚空变暗。
+【11s–15s】·【@图片7 最终城市】  世界在四周成形：雨夜赛博朋克巨城，落定第三人称背影，HUD 淡入。
+</code></pre>
+<p>这条提示词有三个要点：</p>
+<ol>
+<li><strong>镜头绑定参考图</strong>：每段分镜用【图片：X】直接指图，不再重新描述画面长什么样。</li>
+<li><strong>角色设定只写一次</strong>：全片共用同一段角色描述、同一套参考图。</li>
+<li><strong>一次生成成片</strong>：15 秒一镜到底，直接得到成片，无需剪辑。</li>
+</ol>
+<hr />
+<h2 id="s-854e7f1c80">第三部分｜稳住场景：Ye café 案例</h2>
+<h3 id="s-bfa2335dea">01｜三步串成片</h3>
+<blockquote>
+<p><strong>先把空间做成固定参考，多镜头才不会各拍各的。</strong></p>
+</blockquote>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>做什么</th>
+<th>产出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 出空间参考图</td>
+<td>先确定场景的基础视角</td>
+<td>正视图、俯视图</td>
+</tr>
+<tr>
+<td>② 生成分镜图</td>
+<td>用主视角图 + 俯视图生成九宫格，统一各机位</td>
+<td>九宫格样板间分镜图</td>
+</tr>
+<tr>
+<td>③ 串联成片</td>
+<td>@ 引用三张图作参考，配一段段写好的镜头脚本</td>
+<td>一条多镜头视频</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3 id="s-5c2da110cc">02｜Ye café 案例</h3>
+<h4 id="s-4efc857c2b_1">案例总览</h4>
+<blockquote>
+<p><strong>一支 15 秒的片子，9 个镜头走遍整家店。</strong></p>
+</blockquote>
+<ul>
+<li><strong>成片</strong>：15 秒咖啡馆宣传片，9 个镜头硬切，一次生成。</li>
+<li><strong>场景</strong>：一家叫 Ye café 的咖啡馆，9 个镜头全部拍在同一家店里。</li>
+<li><strong>做法</strong>：镜头脚本按时间码写好，@ 三张空间参考图，一次生成整支片。</li>
+</ul>
+<p>九个镜头依次是：外景街道、共享长桌、吧台、沙发、独处角落、商务包间、后区走廊、仓库、出口落版。</p>
+<p>成片：《Ye café 宣传片》</p>
+<video src="../../assets/e3e6e3b1051e7e2f68.mp4" controls preload="metadata" playsinline></video>
+
+<h4 id="s-cc40c53e8e">定空间，统一机位</h4>
+<blockquote>
+<p><strong>机位再多，参照的都是同一个空间。</strong></p>
+</blockquote>
+<p>第一步，先出正视图和俯视图，把空间定下来。</p>
+<p>第二步，用一句提示词生成九宫格分镜：</p>
+<pre><code>图1是主视角，图2是俯视角，为我设计一套九宫格的样板间参观视频分镜图
+</code></pre>
+<figure><img alt="YeCafe正视图" src="../../assets/c04247ef291351b8ec.webp" loading="lazy" decoding="async"></figure>
+<p><em>YeCafe正视图</em></p>
+<figure><img alt="YeCafe俯视图" src="../../assets/c21c70a7ebbe52b7a9.webp" loading="lazy" decoding="async"></figure>
+<p><em>YeCafe俯视图</em></p>
+<figure><img alt="YeCafe九宫格分镜图" src="../../assets/3dccc238e880a250f2.webp" loading="lazy" decoding="async"></figure>
+<p><em>YeCafe九宫格分镜图</em></p>
+<h4 id="s-65a67f359d">@ 三张图与脚本</h4>
+<blockquote>
+<p><strong>脚本的作用，是把参考图排成一条能播的片子。</strong></p>
+</blockquote>
+<p>第三步，把 @九宫格、@俯视图、@正视图 作参考，配上按时间码写好的镜头脚本，整支片一次生成。</p>
+<figure><img alt="即梦Seedance2.0三张参考图与分镜脚本" src="../../assets/ef400d816d65de8119.webp" loading="lazy" decoding="async"></figure>
+<p><em>即梦Seedance2.0三张参考图与分镜脚本</em></p>
+<hr />
+<h3 id="s-880ff979d3">03｜四条验收线</h3>
+<blockquote>
+<p><strong>四条线一起对上，观众才会相信这是同一家店。</strong></p>
+</blockquote>
+<p>成片出来以后，沿四条线逐条对一遍，任何一条对不上，穿帮就出在那一处：</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>验收线</th>
+<th>合格的样子</th>
+<th>出问题的样子（示例）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>材质</td>
+<td>木质与微水泥的质感，镜头之间没有突变</td>
+<td>前一镜头是木地板，后一镜头变成亮面瓷砖</td>
+</tr>
+<tr>
+<td>光线</td>
+<td>傍晚暖光贯穿全片</td>
+<td>外景是黄昏，进店后变成冷白日光</td>
+</tr>
+<tr>
+<td>质感</td>
+<td>浅景深写实摄影感统一</td>
+<td>有的镜头像实拍，有的镜头像游戏渲染</td>
+</tr>
+<tr>
+<td>位置关系</td>
+<td>吧台、沙发、包间的空间关系不乱</td>
+<td>换个机位，沙发跑到吧台另一边</td>
+</tr>
+</tbody>
+</table></div>
+<p>四条线都由同一套空间参考图带住。对不上时，回头改参考图，比在提示词里补描述快得多。</p>
+<hr />
+<h2 id="s-5db9fd7c5a">小结</h2>
+<blockquote>
+<p><strong>想要实现画面一致性，依靠的不是反复堆砌提示词，而是对参考素材的有效投喂。</strong></p>
+</blockquote>
+<ol>
+<li><strong>一致性是提前准备出来的</strong>：功夫不在提示词上，在开拍前的那批素材上。</li>
+<li><strong>四类素材各锁一样</strong>：文字锁意图，图片锁外观，视频锁运动，音频锁节奏。</li>
+<li><strong>角色一致性</strong>：形象、三视图、动作、道具，全部基于同一张角色图长出来。</li>
+<li><strong>场景一致性</strong>：先出正视图和俯视图，再用九宫格统一机位，最后 @ 三张图加脚本一次生成。</li>
+</ol></div><nav class="lesson-navigation" aria-label="前后课程"><a href="../../lessons/m4-1/"><small>← 上一课</small>AI生视频保姆级入门教程</a><a href="../../lessons/m4-3/"><small>下一课 →</small>解决 AI 短片叙事难题</a></nav></article><details class="toc" open><summary>本课目录 <span aria-hidden="true">⌄</span></summary><a class="toc-main" href="#s-f9d25b1ab3">第一部分｜一致性从哪来</a><a href="#s-04bff1fd54">01｜一致性的分类</a><a href="#s-c2b9caf313">02｜生成入口</a><a href="#s-35ada38178">03｜一致性的四类素材</a><a href="#s-bb7b3c363f">04｜三步调度素材</a><a href="#s-228676c864">05｜投喂取代描述</a><a class="toc-main" href="#s-7c5759c892">第二部分｜锁住角色：赛博悟空案例</a><a href="#s-fbb04c46fc">01｜备齐参考图</a><a href="#s-51c246262b">02｜赛博悟空案例</a><a class="toc-main" href="#s-854e7f1c80">第三部分｜稳住场景：Ye café 案例</a><a href="#s-bfa2335dea">01｜三步串成片</a><a href="#s-5c2da110cc">02｜Ye café 案例</a><a href="#s-880ff979d3">03｜四条验收线</a><a class="toc-main" href="#s-5db9fd7c5a">小结</a></details></div><footer class="footer"><span>左叶 · AI 学习手册</span><span>理解原理 · 动手实践 · 独立判断</span><a class="top-link" href="#main">回到顶部 ↑</a></footer></main></body></html>

@@ -1,0 +1,199 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI 到底是什么 · 左叶 AI 学习手册</title><meta name="description" content="从大语言模型到智能体"><meta name="theme-color" content="#18364b"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2318364b'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='34' fill='white'%3EAI%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="../../styles.css"><script defer src="../../app.js"></script></head><body><a href="#main" class="skip-link">跳转到正文</a><header class="mobile-head"><a class="brand" href="../../" aria-label="左叶 AI 学习手册首页"><span class="mark">AI</span>左叶<span style="font-size:13px;letter-spacing:0;font-weight:400;color:var(--muted)">学习手册</span></a><button class="menu-button" aria-expanded="false" aria-controls="site-sidebar">课程目录</button></header><aside class="sidebar" id="site-sidebar"><a class="brand" href="../../" aria-label="左叶 AI 学习手册首页"><span class="mark">AI</span>左叶<span style="font-size:13px;letter-spacing:0;font-weight:400;color:var(--muted)">学习手册</span></a><div class="brand-note">A FIELD GUIDE TO AI</div><p class="nav-label">学习路径</p><nav class="module-nav" aria-label="课程模块"><a href="../../#module-1" class="active"><span class="nav-num">01</span>AI认知与探索</a><a href="../../#module-2" class=""><span class="nav-num">02</span>AI文字创作</a><a href="../../#module-3" class=""><span class="nav-num">03</span>AI商业视觉</a><a href="../../#module-4" class=""><span class="nav-num">04</span>AI视频通识</a><a href="../../#module-5" class=""><span class="nav-num">05</span>Agent与自动化</a></nav><div class="sidebar-footer"><strong>从理解，到创造。</strong>28 篇图文课程已上线<br>持续更新中的 AI 学习手册</div></aside><main class="page" id="main"><div class="topline"><a class="back-link" href="../../#module-1">← 返回课程目录</a><span>模块 01 / 第 01 课</span></div><div class="reading-layout"><article><header class="article-header"><span class="eyebrow">AI认知与探索</span><h1>AI 到底是什么</h1><p class="subtitle">从大语言模型到智能体</p><img class="article-cover" src="../../assets/c40605065894ab7dd4.webp" alt="AI 到底是什么课程封面" width="1200" height="512"></header><div class="article-content"><h2 id="s-e9e29ad863">第一部分｜AI 生成内容</h2>
+<h3 id="s-58e4343190">01｜大语言模型 LLM</h3>
+<blockquote>
+<p><strong>大语言模型能理解你的要求，帮你解释问题、分析事情、创作内容。</strong></p>
+</blockquote>
+<figure><img alt="大语言模型：训练与使用两步" src="../../assets/f567d9129ec8cb573c.webp" loading="lazy" decoding="async"></figure>
+<p><strong>用豆包处理三个具体任务，感受解释问题、分析事情和创作内容的能力。</strong></p>
+<blockquote>
+<p><strong>解释问题</strong>：问豆包“手机里没存多少照片，为什么还是提示空间不足？”，让它讲清应用数据、缓存和系统文件怎样占用空间。</p>
+<p><strong>分析事情</strong>：把两瓶饮料的营养成分表各截一张图，发给豆包，问“哪一瓶对身体更不友好？”，让它对着数字一项项分析。</p>
+<p><strong>创作内容</strong>：把刚看完的一部电影的主线和亮点告诉豆包，让它写一段推荐给没看过的朋友，讲清讲了什么、适合谁看，语言自然。</p>
+</blockquote>
+<p>参考：<a href="https://developers.google.com/machine-learning/crash-course/llm/transformers" target="_blank" rel="noopener noreferrer">模型与训练</a>。</p>
+<hr />
+<h3 id="s-66e2873196">02｜Token</h3>
+<blockquote>
+<p><strong>AI 会把文字切成一个个小块来处理，比如字、词或标点，每个小块叫一个 Token。</strong></p>
+</blockquote>
+<figure><img alt="分词：把文字切成 Token" src="../../assets/60ce00c5c4fbc49b4a.webp" loading="lazy" decoding="async"></figure>
+<p><strong>通过800字高考作文和调用费用，感受 Token 的数量级。</strong></p>
+<blockquote>
+<p><strong>1 Token ≈ 1.67 个中文字符。</strong></p>
+<p><strong>100 万 Token ≈ 167 万字 ≈ 2080 篇800字高考作文。</strong></p>
+<p>DeepSeek-V4-Flash：<strong>100 万输出 Token = 9 元</strong>（高峰价）。</p>
+</blockquote>
+<p>参考：<a href="https://huggingface.co/learn/llm-course/chapter2/4" target="_blank" rel="noopener noreferrer">文字切分</a>、<a href="https://api-docs.deepseek.com/zh-cn/quick_start/token_usage/" target="_blank" rel="noopener noreferrer">中文换算</a>、<a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/" target="_blank" rel="noopener noreferrer">价格表</a>。换算为 DeepSeek 的粗估，费用仅计输出，价格采用2026-08-28口径。</p>
+<hr />
+<h3 id="s-0f7344df3f">03｜思考强度 Reasoning Effort</h3>
+<blockquote>
+<p><strong>思考强度调高，AI 通常会多花些工夫分析，回答也可能更慢。</strong></p>
+</blockquote>
+<figure><img alt="思考强度：作答前先做一轮推理" src="../../assets/69ba24a76c0934e14d.webp" loading="lazy" decoding="async"></figure>
+<p><strong>通过产品里的思考设置，感受响应速度与分析深度之间的选择。</strong></p>
+<blockquote>
+<p>图中的“深度思考”“推理强度”，让你按任务选择思考投入。改一句日常文案，可以让 AI 快些回答；比较几份项目方案的成本、工期和风险，可以让它多分析一会儿。</p>
+<figure><img alt="DeepSeek 的深度思考入口" src="../../assets/336c46c7d3e7f22f36.webp" loading="lazy" decoding="async"></figure>
+<figure><img alt="ChatGPT 的推理强度档位" src="../../assets/8bf918d4f9696fb7e3.webp" loading="lazy" decoding="async"></figure>
+</blockquote>
+<p>参考：<a href="https://api-docs.deepseek.com/zh-cn/guides/thinking_mode/" target="_blank" rel="noopener noreferrer">DeepSeek 思考设置</a>、<a href="https://learn.chatgpt.com/docs/models#pick-a-reasoning-effort" target="_blank" rel="noopener noreferrer">ChatGPT 推理强度</a>。</p>
+<hr />
+<h3 id="s-2edb680b07">04｜幻觉 Hallucination</h3>
+<blockquote>
+<p><strong>它有时会把编出来的内容，说得跟真的一样。</strong></p>
+</blockquote>
+<figure><img alt="幻觉：按语言规律补出细节" src="../../assets/d0bbf53186caa8f25e.webp" loading="lazy" decoding="async"></figure>
+<p><strong>通过豆包退票争议，感受错误建议和虚假承诺对现实决定的影响。</strong></p>
+<blockquote>
+<p>据《每日经济新闻》等媒体报道，一名男子：</p>
+<p>他担心退票手续费太高，先问豆包。豆包让他<strong>“放心退”</strong>，说只扣 <strong>5%</strong>。他没找航司核实就退了，结果扣了 <strong>40%</strong>，损失 <strong>600 元</strong>。</p>
+<p>男子找豆包理论，豆包把维权揽了过去，还生成一份<strong>赔付承诺书</strong>：到期追不回费用，就全额赔付600元，还让他发收款码。</p>
+<p>到了约定日期，钱没到账。男子再问，豆包又改口：<strong>自己是AI，没法直接转账。</strong></p>
+</blockquote>
+<p>参考：<a href="https://arxiv.org/abs/2509.04664" target="_blank" rel="noopener noreferrer">幻觉形成研究</a>、<a href="https://www.nbd.com.cn/articles/2026-05-20/4400991.html" target="_blank" rel="noopener noreferrer">《每日经济新闻》报道</a>、<a href="https://m.sohu.com/a/1024730830_161795" target="_blank" rel="noopener noreferrer">《南方都市报》报道</a>。</p>
+<hr />
+<h2 id="s-51c24e3230">第二部分｜AI 接收信息</h2>
+<h3 id="s-3e0ce80258">05｜提示词 Prompt</h3>
+<blockquote>
+<p><strong>你把要做什么、有什么要求说清楚，AI 才更容易帮上忙。</strong></p>
+</blockquote>
+<figure><img alt="提示词：要求影响生成" src="../../assets/ac96d11f5bd702e6e7.webp" loading="lazy" decoding="async"></figure>
+<p><strong>通过整理会议记录，感受要求说清前后的差别。</strong></p>
+<blockquote>
+<p>把同一份会议记录交给 AI：</p>
+<p><strong>笼统要求</strong>：“帮我整理这份会议记录。”</p>
+<p><strong>明确要求</strong>：“把这份会议记录里的待办事项整理成表格，列出要做什么、谁负责、什么时候完成。没有写清的信息标‘待确认’，不要自行补全。”</p>
+<p>后一句说清了要提取什么、怎么呈现、信息不全时怎么办，AI 更容易给出符合需要的结果。</p>
+</blockquote>
+<p>参考：<a href="https://developers.openai.com/api/docs/guides/prompt-engineering" target="_blank" rel="noopener noreferrer">任务指令与上下文</a>。</p>
+<hr />
+<h3 id="s-344066dcfd">06｜上下文 Context</h3>
+<blockquote>
+<p><strong>这次回答时，AI 能看到的对话、资料和要求，合起来就是上下文。</strong></p>
+</blockquote>
+<figure><img alt="上下文：这次能看到的全部信息" src="../../assets/6710200286265b9087.webp" loading="lazy" decoding="async"></figure>
+<p><strong>通过上下文用量和记忆设置，分清当前材料、容量上限与长期保存的信息。</strong></p>
+<blockquote>
+<p>第一张图是 <strong>WorkBuddy 的输入框</strong>，标示的容量是100万 Token，当前带入的对话、资料和要求占用这些空间，<strong>上下文窗口</strong>就是一次能处理的容量上限。</p>
+<figure><img alt="WorkBuddy 的上下文用量" src="../../assets/375f0d8999ae6bcc7f.webp" loading="lazy" decoding="async"></figure>
+<p>第二张图是 <strong>WorkBuddy 的记忆设置</strong>。例如，把“我喜欢简洁的回答”保存成偏好，以后相关的对话还能取用，这就是记忆的用途。</p>
+<figure><img alt="WorkBuddy 的记忆设置" src="../../assets/36ddcbc12890b4c0d4.webp" loading="lazy" decoding="async"></figure>
+<p><strong>记忆被取用后，也要加入这次的上下文；保存记忆不会让窗口变成无限大。</strong></p>
+</blockquote>
+<p>参考：<a href="https://platform.claude.com/docs/en/build-with-claude/context-windows" target="_blank" rel="noopener noreferrer">上下文窗口</a>、<a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Memory" target="_blank" rel="noopener noreferrer">WorkBuddy 记忆</a>。</p>
+<hr />
+<h3 id="s-3bf65c9735">07｜检索增强生成 RAG</h3>
+<blockquote>
+<p><strong>AI 先找出相关资料，再根据资料回答，这种做法叫 RAG。</strong></p>
+</blockquote>
+<figure><img alt="RAG：先找资料再作答" src="../../assets/ebc94f09e533a81a50.webp" loading="lazy" decoding="async"></figure>
+<p><strong>通过 ima 的说明书问答，感受答案怎样从自己的资料里找出来。</strong></p>
+<blockquote>
+<p>假设 ima 知识库里有一款耳机的说明书，其中写着：“开启降噪时，单次续航约6小时。”</p>
+<p>你问：“这款耳机开着降噪能用多久？”系统检索到这段说明后，模型据此回答“约6小时”，并附上对应出处。</p>
+<p>把<strong>问题、命中的原文和回答</strong>放在一起，就能核对答案有没有依据，也能发现它是否漏掉了“开启降噪”这个条件。</p>
+</blockquote>
+<p>参考：<a href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noopener noreferrer">RAG 原始论文</a>、<a href="https://developer.cloud.tencent.cn/news/2801686" target="_blank" rel="noopener noreferrer">ima 知识库与检索过程</a>。</p>
+<hr />
+<h2 id="s-ec9bd1273d">第三部分｜AI 执行任务</h2>
+<h3 id="s-7fd71f121f">08｜工具 Tool</h3>
+<blockquote>
+<p><strong>模型提出操作请求，工具负责执行，比如查资料、做计算、写文件。</strong></p>
+</blockquote>
+<figure><img alt="工具：模型下指令、工具执行" src="../../assets/639c2e4cc99719e835.webp" loading="lazy" decoding="async"></figure>
+<p><strong>通过 DeepSeek Harness 的执行轨迹，感受工具怎样把操作落实到电脑上。</strong></p>
+<blockquote>
+<p>用户要求基于一份县级失业率与家庭收入 Excel，完成数据分析和可视化报告。</p>
+<p>截图中，<code>todo_write</code> 用来更新任务清单，<code>bash</code> 用来检查 Python 环境、准备依赖并发起文件下载。沿着这些工具记录，可以核对实际发起的操作与返回结果。</p>
+<figure><img alt="DeepSeek Harness 的工具执行轨迹" src="../../assets/b495877a8dadb35678.webp" loading="lazy" decoding="async"></figure>
+</blockquote>
+<hr />
+<h3 id="s-2b4d6137ce">09｜技能 Skill</h3>
+<blockquote>
+<p><strong>Skill 把一类任务的步骤、模板和资料打包好，让 AI 需要时照着用。</strong></p>
+</blockquote>
+<figure><img alt="Skill：把步骤和要求打包复用" src="../../assets/3cc6233c2622ea8907.webp" loading="lazy" decoding="async"></figure>
+<p><strong>通过 WorkBuddy 的技能列表和周报需求，感受一套做法怎样保存和复用。</strong></p>
+<blockquote>
+<p>截图中的技能按用途排列，涵盖会议纪要、PDF与图片文字提取、PPT制作等任务，方便查找现成的做法。</p>
+<figure><img alt="WorkBuddy 的技能列表" src="../../assets/1f7a3fb397cb885ffa.webp" loading="lazy" decoding="async"></figure>
+<p>假设每周都要交周报，固定三栏：<strong>本周进展、遇到的问题、下周计划</strong>。进展先写结果，未完成的事项说明原因。</p>
+<p>在 WorkBuddy 这类支持 Skill 的产品里，可以把整理步骤、周报模板和一份合格样例保存为一个 Skill。</p>
+<p>以后每周换一份工作记录，AI 都能按这套要求继续整理，不用重新交代栏目、写法和格式。</p>
+</blockquote>
+<p>参考：<a href="https://agentskills.io/home" target="_blank" rel="noopener noreferrer">Agent Skills</a>、<a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Practice-Eight" target="_blank" rel="noopener noreferrer">WorkBuddy 自定义技能</a>。</p>
+<hr />
+<h3 id="s-9931ac26e6">10｜智能体 Agent</h3>
+<blockquote>
+<p><strong>你给它一个目标，它会自己拆步骤、用工具、检查，再继续。</strong></p>
+</blockquote>
+<figure><img alt="智能体：判断—执行—回传的循环" src="../../assets/a21627cc0e8127b8fa.webp" loading="lazy" decoding="async"></figure>
+<p><strong>用 DeepSeek Harness 推进分析任务，感受 AI 怎样根据执行结果安排下一步。</strong></p>
+<blockquote>
+<p>面对这项分析报告需求，它先列出6项任务，从检查环境、下载数据开始。</p>
+<p>检查发现缺少处理表格的程序库 pandas 后，它把下一步转为查找可用环境；计划在没有现成环境时新建一套，再继续数据处理。</p>
+<figure><img alt="DeepSeek Harness 根据环境检查结果安排下一步" src="../../assets/d583f241e902919231.webp" loading="lazy" decoding="async"></figure>
+<p>报告：查看分析报告</p>
+<figure><img alt="分析报告封面与执行摘要" src="../../assets/5582f2679ad05e47c0.webp" loading="lazy" decoding="async"></figure>
+<figure><img alt="分析报告 COVID 失业率冲击 Top15" src="../../assets/38cd83f7287a401680.webp" loading="lazy" decoding="async"></figure>
+</blockquote>
+<p>参考：<a href="https://www.anthropic.com/engineering/building-effective-agents" target="_blank" rel="noopener noreferrer">Agent 与工具的配合</a>。</p>
+<hr />
+<h2 id="s-5db9fd7c5a">小结</h2>
+<ol>
+<li><strong>AI 生成内容</strong>：LLM 理解要求并生成回答，Token 计量处理的信息，思考强度影响分析投入，输出仍可能出现幻觉。</li>
+<li><strong>AI 接收信息</strong>：Prompt 说明任务，Context 包含这次能用的信息，RAG 补充查到的资料。</li>
+<li><strong>AI 执行任务</strong>：Tool 执行操作，Skill 提供做法，Agent 根据结果决定下一步。</li>
+</ol>
+<hr />
+<h2 id="s-b7782c5f86">延伸阅读</h2>
+<h3 id="s-f953a95abf">1｜模型与内容</h3>
+<ul>
+<li><strong>AI 模型（AI Model）</strong> — 通过训练学到规律，用来识别、预测或生成内容。</li>
+<li><strong>人工智能生成内容（AI-Generated Content，AIGC）</strong> — 用 AI 生成的文字、图片、声音、视频等内容。</li>
+<li><strong>多模态（Multimodal）</strong> — 能处理文字、图片、声音等多种形式的信息，具体支持范围因模型而异。</li>
+<li><strong>神经网络（Neural Network）</strong> — 由相连的计算单元组成，通过训练调整参数来学习规律。</li>
+<li><strong>参数量（Parameter Count）</strong> — 模型内部参数的数量，数量多不代表能力一定更强。</li>
+<li><strong>泛化（Generalization）</strong> — 把训练中学到的规律用于没见过的数据或问题。</li>
+</ul>
+<p>参考：<a href="https://developers.google.com/machine-learning/glossary" target="_blank" rel="noopener noreferrer">机器学习术语</a>、<a href="https://huggingface.co/docs/transformers/tasks/image_text_to_text" target="_blank" rel="noopener noreferrer">多模态输入与输出</a>。</p>
+<h3 id="s-07ad8be988">2｜模型结构与生成</h3>
+<ul>
+<li><strong>Transformer 架构（Transformer）</strong> — 主要通过注意力机制处理信息之间的关系，是许多大语言模型的基础。</li>
+<li><strong>注意力机制（Attention）</strong> — 处理当前信息时，给相关内容分配不同权重，帮助模型利用它们之间的联系。</li>
+<li><strong>向量表示／嵌入（Embeddings）</strong> — 把文字、图片等内容转成一组数字，方便比较相似程度和查找相关内容。</li>
+<li><strong>混合专家模型（Mixture of Experts，MoE）</strong> — 让多个“专家”子网络分担计算，通常只启用其中一部分处理当前输入。</li>
+<li><strong>扩散模型（Diffusion Model）</strong> — 通过学习逐步去除噪声，生成图片等内容。</li>
+</ul>
+<p>参考：<a href="https://huggingface.co/learn/llm-course/chapter1/4" target="_blank" rel="noopener noreferrer">Transformer 与注意力</a>、<a href="https://arxiv.org/abs/2101.03961" target="_blank" rel="noopener noreferrer">MoE</a>、<a href="https://arxiv.org/abs/2006.11239" target="_blank" rel="noopener noreferrer">扩散模型</a>。</p>
+<h3 id="s-8aaaa19086">3｜输入与生成控制</h3>
+<ul>
+<li><strong>系统提示词（System Prompt）</strong> — 由应用设定的指令，用来规定模型的角色、行为和回答方式。</li>
+<li><strong>用户提示词（User Prompt）</strong> — 用户发给模型的任务、问题和具体要求。</li>
+<li><strong>提示词工程（Prompt Engineering）</strong> — 设计、测试和调整提示词，让模型的回答更符合任务要求。</li>
+<li><strong>上下文窗口（Context Window）</strong> — 模型一次能处理的 Token 数量上限。</li>
+<li><strong>记忆（Memory）</strong> — 把有用的信息保存下来，供以后相关对话取用。</li>
+<li><strong>思维链（Chain of Thought，CoT）</strong> — 在得出答案前生成一系列中间推理步骤，步骤本身也可能出错。</li>
+<li><strong>温度（Temperature）</strong> — 影响生成结果的变化程度，低一些更集中，高一些更多样。</li>
+</ul>
+<p>参考：<a href="https://arxiv.org/abs/2201.11903" target="_blank" rel="noopener noreferrer">思维链</a>、<a href="https://huggingface.co/docs/transformers/internal/generation_utils#transformers.TemperatureLogitsWarper" target="_blank" rel="noopener noreferrer">温度与采样</a>。温度作用以模型支持该设置并采用采样为前提。</p>
+<h3 id="s-90a5ef465b">4｜知识与连接</h3>
+<ul>
+<li><strong>知识库（Knowledge Base）</strong> — 集中整理文档、规则等资料，供查询和 AI 问答使用。</li>
+<li><strong>向量数据库（Vector Database）</strong> — 专门存储和检索向量，帮助系统快速找到相似内容。</li>
+<li><strong>深度研究（Deep Research）</strong> — 围绕一个问题多轮查资料、分析和整合信息，形成带来源的报告。</li>
+<li><strong>模型上下文协议（Model Context Protocol，MCP）</strong> — 让 AI 应用按统一方式连接外部工具和数据的协议。</li>
+<li><strong>应用程序编程接口（Application Programming Interface，API）</strong> — 约定软件之间怎样请求功能、传递数据。</li>
+<li><strong>智能体运行框架（Agent Harness）</strong> — 为智能体提供调用模型、使用工具、管理上下文和执行任务的运行环境。</li>
+</ul>
+<p>参考：<a href="https://qdrant.tech/documentation/overview/" target="_blank" rel="noopener noreferrer">向量数据库</a>、<a href="https://ai.google.dev/gemini-api/docs/deep-research" target="_blank" rel="noopener noreferrer">深度研究</a>、<a href="https://modelcontextprotocol.io/docs/learn/architecture" target="_blank" rel="noopener noreferrer">MCP</a>、<a href="https://developer.mozilla.org/en-US/docs/Glossary/API" target="_blank" rel="noopener noreferrer">API</a>、<a href="https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents" target="_blank" rel="noopener noreferrer">Agent Harness</a>。</p>
+<h3 id="s-a48f26fec1">5｜模型训练与部署</h3>
+<ul>
+<li><strong>迁移学习（Transfer Learning）</strong> — 把模型在一个任务中学到的知识，用到另一个任务中。</li>
+<li><strong>微调（Fine-tuning）</strong> — 在已有模型上继续训练，让它更适应特定任务或表达方式。</li>
+<li><strong>人类反馈强化学习（Reinforcement Learning from Human Feedback，RLHF）</strong> — 将人的评价转成训练中的奖励信号，让模型的回答更符合人的偏好。</li>
+<li><strong>低秩适配（Low-Rank Adaptation，LoRA）</strong> — 保持原模型参数不变，通过训练少量新增参数来调整模型表现。</li>
+<li><strong>量化（Quantization）</strong> — 用更低精度的数值表示模型参数，降低内存占用，效果可能受影响。</li>
+<li><strong>开源与闭源（Open-source vs. Closed-source）</strong> — 开源允许查看、修改和分享实现，闭源通常只提供使用入口；仅开放权重不等于完整开源。</li>
+</ul>
+<p>参考：<a href="https://developers.google.com/machine-learning/glossary" target="_blank" rel="noopener noreferrer">训练相关术语</a>、<a href="https://arxiv.org/abs/2106.09685" target="_blank" rel="noopener noreferrer">LoRA</a>、<a href="https://huggingface.co/docs/transformers/quantization/overview" target="_blank" rel="noopener noreferrer">量化</a>、<a href="https://opensource.org/ai/open-source-ai-definition" target="_blank" rel="noopener noreferrer">开源AI定义</a>。</p></div><nav class="lesson-navigation" aria-label="前后课程"><a href="../../"><small>← 课程目录</small>查看全部课程</a><a href="../../lessons/m1-2/"><small>下一课 →</small>AI 工具选择指南</a></nav></article><details class="toc" open><summary>本课目录 <span aria-hidden="true">⌄</span></summary><a class="toc-main" href="#s-e9e29ad863">第一部分｜AI 生成内容</a><a href="#s-58e4343190">01｜大语言模型 LLM</a><a href="#s-66e2873196">02｜Token</a><a href="#s-0f7344df3f">03｜思考强度 Reasoning Effort</a><a href="#s-2edb680b07">04｜幻觉 Hallucination</a><a class="toc-main" href="#s-51c24e3230">第二部分｜AI 接收信息</a><a href="#s-3e0ce80258">05｜提示词 Prompt</a><a href="#s-344066dcfd">06｜上下文 Context</a><a href="#s-3bf65c9735">07｜检索增强生成 RAG</a><a class="toc-main" href="#s-ec9bd1273d">第三部分｜AI 执行任务</a><a href="#s-7fd71f121f">08｜工具 Tool</a><a href="#s-2b4d6137ce">09｜技能 Skill</a><a href="#s-9931ac26e6">10｜智能体 Agent</a><a class="toc-main" href="#s-5db9fd7c5a">小结</a><a class="toc-main" href="#s-b7782c5f86">延伸阅读</a><a href="#s-f953a95abf">1｜模型与内容</a><a href="#s-07ad8be988">2｜模型结构与生成</a><a href="#s-8aaaa19086">3｜输入与生成控制</a><a href="#s-90a5ef465b">4｜知识与连接</a><a href="#s-a48f26fec1">5｜模型训练与部署</a></details></div><footer class="footer"><span>左叶 · AI 学习手册</span><span>理解原理 · 动手实践 · 独立判断</span><a class="top-link" href="#main">回到顶部 ↑</a></footer></main></body></html>

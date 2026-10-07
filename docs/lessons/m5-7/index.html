@@ -1,0 +1,188 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI 知识蒸馏 · 左叶 AI 学习手册</title><meta name="description" content="把经验变成可复用资产，让好素材随时可用"><meta name="theme-color" content="#18364b"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2318364b'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='34' fill='white'%3EAI%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="../../styles.css"><script defer src="../../app.js"></script></head><body><a href="#main" class="skip-link">跳转到正文</a><header class="mobile-head"><a class="brand" href="../../" aria-label="左叶 AI 学习手册首页"><span class="mark">AI</span>左叶<span style="font-size:13px;letter-spacing:0;font-weight:400;color:var(--muted)">学习手册</span></a><button class="menu-button" aria-expanded="false" aria-controls="site-sidebar">课程目录</button></header><aside class="sidebar" id="site-sidebar"><a class="brand" href="../../" aria-label="左叶 AI 学习手册首页"><span class="mark">AI</span>左叶<span style="font-size:13px;letter-spacing:0;font-weight:400;color:var(--muted)">学习手册</span></a><div class="brand-note">A FIELD GUIDE TO AI</div><p class="nav-label">学习路径</p><nav class="module-nav" aria-label="课程模块"><a href="../../#module-1" class=""><span class="nav-num">01</span>AI认知与探索</a><a href="../../#module-2" class=""><span class="nav-num">02</span>AI文字创作</a><a href="../../#module-3" class=""><span class="nav-num">03</span>AI商业视觉</a><a href="../../#module-4" class=""><span class="nav-num">04</span>AI视频通识</a><a href="../../#module-5" class="active"><span class="nav-num">05</span>Agent与自动化</a></nav><div class="sidebar-footer"><strong>从理解，到创造。</strong>28 篇图文课程已上线<br>持续更新中的 AI 学习手册</div></aside><main class="page" id="main"><div class="topline"><a class="back-link" href="../../#module-5">← 返回课程目录</a><span>模块 05 / 第 07 课</span></div><div class="reading-layout"><article><header class="article-header"><span class="eyebrow">Agent与自动化</span><h1>AI 知识蒸馏</h1><p class="subtitle">把经验变成可复用资产，让好素材随时可用</p><img class="article-cover" src="../../assets/0ce6f4a72717e33517.webp" alt="AI 知识蒸馏课程封面" width="1200" height="512"></header><div class="article-content"><h2 id="s-0be917aa7b">第一部分｜把风格蒸馏成技能</h2>
+<h3 id="s-4598c16a86">01｜蒸馏出一套配图</h3>
+<blockquote>
+<p><strong>一个技能就能让一篇文章的封面和配图一次出齐，整套图像同一个人画的。</strong></p>
+</blockquote>
+<p>YePicture 是从一组参考图蒸馏出来的配图技能。把一篇文章交给它，它读完文章，一次输出封面图和每个章节的配图。</p>
+<p>整套图共用一套视觉语言：暖米白的纸纹底色，白色纸雕质感的物件。封面图负责表达文章的中心论点，章节图一图一个隐喻，把抽象概念换成能看见的物件。</p>
+<p>这组图是技能给一篇讲知识库的文章做的成品，封面一张，章节六张。</p>
+<figure><img alt="封面图_米白纸雕" src="../../assets/f939b76b12a4c97e7f.webp" loading="lazy" decoding="async"></figure>
+<p><em>封面图_米白纸雕</em></p>
+<figure><img alt="章节配图合集_米白纸雕" src="../../assets/95e8aa42aa83f324be.webp" loading="lazy" decoding="async"></figure>
+<p><em>章节配图合集_米白纸雕</em></p>
+<hr />
+<h3 id="s-88407a29af">02｜写出蒸馏指令</h3>
+<blockquote>
+<p><strong>先收一组喜欢的参考图，再把这条指令整段交给 AI。</strong></p>
+</blockquote>
+<p>起点是一组特别喜欢的参考图。人不必逐张形容风格，把参考图和这条指令一起交给 AI 就行。</p>
+<p>这条指令一共六步：</p>
+<pre><code class="language-text">1 只留参考图：删掉多余图片，仅保留参考图片
+2 读图：派多个 subagent 反推每张图的提示词，总结规律
+3 生图：用内置生图工具，按规律生成新图片
+4 对比：新图与参考图对比，修正提示词
+5 循环：重复读图和生图，直到新图与参考图高度一致
+6 做 skill：把提示词沉淀成稳定的 skill，读一篇文章就能产出适配的封面图和内容图
+</code></pre>
+<p>真机跑完这一条指令用了 20 分 29 秒，派出 3 个 subagent 分别反推三组参考图，合并出稳定规律，又做了两轮生图校准，最后沉淀成 YePicture（截图里是它当时的临时名字）。技能里装进六样东西：文章阅读与视觉提炼流程、封面图提示词模板、章节图提示词模板、编号图模板、风格规则与负面提示词、生成后的自检清单。</p>
+<figure><img alt="蒸馏指令真机运行结果" src="../../assets/3acd73606ade4a0f70.webp" loading="lazy" decoding="async"></figure>
+<p><em>蒸馏指令真机运行结果</em></p>
+<hr />
+<h3 id="s-a165534393">03｜反推再校准</h3>
+<blockquote>
+<p><strong>AI 自己读图、自己纠错，总结出的规律比人手动描述更全。</strong></p>
+</blockquote>
+<p><strong>反推规律</strong></p>
+<p>让 AI 从参考图里主动反推出画面规律：底色是什么、主体用什么材质、阴影多软、文字占多大比例。人描述风格时容易漏掉自己没注意到的部分，AI 逐张读完再合并，覆盖面更大。</p>
+<p><strong>对比修正</strong></p>
+<p>按总结出的规律生成新图，把新图和参考图摆在一起挑毛病。哪一处偏了就回到提示词里改那一句，再生成一轮。</p>
+<p><strong>收敛沉淀</strong></p>
+<p>反复循环到新图和参考图高度一致，稳定下来的那套规律才有资格写进技能。参考图本身不进技能，进技能的是出图的规律，这样换一篇文章、换一个主题，风格照样稳定。</p>
+<hr />
+<h3 id="s-961f5a93a7">04｜看看技能文件里有什么</h3>
+<blockquote>
+<p><strong>蒸馏出来的产物是一整套写成文件的规则，提示词只是其中一段。</strong></p>
+</blockquote>
+<p><strong>主流程文件</strong></p>
+<p>SKILL.md 定下流程：读文章、挑出值得配图的章节观点、为每张图选类型，再按模板写提示词。这份文件只管流程，风格细节交给后面的规则文件承接。</p>
+<p><strong>隐喻词典</strong></p>
+<p>抽象概念翻成能画出来的物件：筛选是漏斗，阅读是打开的书，归档是档案盒，流程是节点图。词典一固定，不同文章配出来的图也能保持同一套视觉语汇。</p>
+<p><strong>规则与自检</strong></p>
+<p>风格规律、封面常见跑偏、共用负面提示词各成一份清单。这些规则固定写进技能文件，每次生成都按同一套标准执行，风格不会随文章主题变化而漂移。</p>
+<figure><img alt="YePicture技能文件截图" src="../../assets/4f24bcb9c0f1608975.webp" loading="lazy" decoding="async"></figure>
+<p><em>YePicture技能文件截图</em></p>
+<h2 id="s-2c66494799">第二部分｜把书蒸馏成技能包</h2>
+<h3 id="s-e2d83bb06e">05｜蒸馏一本设计书</h3>
+<blockquote>
+<p><strong>一本讲版式设计的书，最后变成一个总控加六个原子技能的技能包。</strong></p>
+</blockquote>
+<p>案例用的是《写给大家看的设计书（第4版）》，258 页。这本书讲版式设计，读的时候觉得处处有用，真做 PPT 时又调不出具体哪一条。把它蒸馏成技能，用的时候直接调用。</p>
+<p><strong>拆解技能结构</strong></p>
+<p>总控读整套演示稿，按亲密性、对齐、重复、对比四条原则判断该修什么，再决定派哪个原子技能出手。分组、对齐、跨页、焦点、配色、字体各由一个原子技能深做。</p>
+<p><strong>标注原书页码</strong></p>
+<p>总控技能里的每条规则都标着原书出处，例如“从中心点开始，确定希望读者最先看什么”标到《写给大家看的设计书（第4版）》第 13 章、印刷页 214。用到存疑的地方可以翻回原书核对。</p>
+<p><strong>按环节切分</strong></p>
+<p>技能按真实干活时的环节划分，一本方法论密度高的书做成了一排能直接调的按钮。</p>
+<figure><img alt="PPT美化总控技能详情" src="../../assets/e89ddb7f00a82d7f93.webp" loading="lazy" decoding="async"></figure>
+<p><em>PPT美化总控技能详情</em></p>
+<figure><img alt="装好的七个美化技能" src="../../assets/42f7296992a5d11800.webp" loading="lazy" decoding="async"></figure>
+<p><em>装好的七个美化技能</em></p>
+<hr />
+<h3 id="s-fda495cd44">06｜用现成技能蒸馏</h3>
+<blockquote>
+<p><strong>蒸馏这件事本身也有现成技能可用，装好 Cangjie 就能开工。</strong></p>
+</blockquote>
+<p>Cangjie 是 GitHub 上的开源技能，整条蒸馏线交给它，流程一个字都不用手写。要下的指令只有一句话：</p>
+<pre><code class="language-text">使用【@Cangjie Skill】，把《写给大家看的设计书（第4版）》这本书里的知识，做成一个 PPT 美化的 skill。
+</code></pre>
+<p>Cangjie 内置六个阶段：读懂全书、五路提取、三重验证、构造、链接、压力测试。全程有两处会自动停下来等确认，一处是整书骨架，一处是取舍清单，关键判断留在人这里。</p>
+<p>阶段 0 的产出是两份文件：BOOK_OVERVIEW.md 记整书骨架，PIPELINE_STATE.md 记流水线状态。骨架被归纳成一条主线：命名设计问题、亲密性组织信息、对齐建立秩序、重复形成视觉系统、对比建立焦点层级、用颜色和字体强化表达、通过重设计与测试形成设计师之眼。这一步用时 11 分 53 秒。</p>
+<figure><img alt="Cangjie阶段零完成" src="../../assets/6fcf9f315e2b5f4e42.webp" loading="lazy" decoding="async"></figure>
+<p><em>Cangjie阶段零完成</em></p>
+<hr />
+<h3 id="s-f7a687d0a9">07｜筛选与验证</h3>
+<blockquote>
+<p><strong>同一本书扫五个视角得到 276 条记录，真正装进技能的只有 7 条。</strong></p>
+</blockquote>
+<p><strong>并行提取</strong></p>
+<p>五个提取器同时扫全书，各走一个视角：框架、原则、案例、反例、术语。一本书拆成五个方向读，产出 276 条原始知识记录。</p>
+<p><strong>合并验证</strong></p>
+<p>276 条记录经过聚类、去重、合并、三重验证四道流程，只剩 7 个技能单元：主编排与重设计闭环、信息分组与视线路径、网格对齐与有意破格、跨页视觉系统、焦点层级与对比、配色生成与可读性、中英文字体系统。</p>
+<p><strong>淘汰留档</strong></p>
+<p>落选的 8 类内容都记下了原因，有的降级成参考资料，有的并进技能的适用边界。宁缺毋滥，装进技能的每一条都要能被单独验证。</p>
+<figure><img alt="Cangjie候选筛选结果" src="../../assets/501c25641d4e98618b.webp" loading="lazy" decoding="async"></figure>
+<p><em>Cangjie候选筛选结果</em></p>
+<hr />
+<h3 id="s-1dbb8e1ef8">08｜盲测把关</h3>
+<blockquote>
+<p><strong>验收交给一个没参与编写的 Agent，它出的题全部考过才算数。</strong></p>
+</blockquote>
+<p>它拿到技能之后，按真实任务出题：56 条独立测试必须全部通过，21 条诱饵测试必须零误触发，两项都达标才允许交付。</p>
+<p>诱饵测试专门试它会不会乱接活。让它从零写一篇演讲稿，这类不该接的任务它都正确拒绝，说明触发条件收得够窄。整个仓库最后交出的东西包括 1 个总控加 6 个原子技能、13 条技能关系、20 个术语和约 8,148 字符的精华文档。</p>
+<figure><img alt="蒸馏产物汇总" src="../../assets/8bd44530b93708d001.webp" loading="lazy" decoding="async"></figure>
+<p><em>蒸馏产物汇总</em></p>
+<hr />
+<h3 id="s-06eb3bb883">09｜装好并试用</h3>
+<blockquote>
+<p><strong>把技能装进技能目录，点名说和随口说都能调到对的那个。</strong></p>
+</blockquote>
+<p>安装走一次校验，7 个技能的目录、格式、运行一遍全部通过，装到 ~/.agents/skills/。装完之后三种说法都能用：</p>
+<ol>
+<li><strong>点名调用</strong>：直接说「用 PPT 美化总控」，总控技能启动。</li>
+<li><strong>说清需求</strong>：说「把这套 PPT 系统美化」，自动落到总控技能。</li>
+<li><strong>只说细节</strong>：说「重做这页配色」，自动落到配色技能，总控不抢活。</li>
+</ol>
+<p>如果技能列表没有立即刷新，重启一次客户端即可。</p>
+<figure><img alt="安装结果与路由" src="../../assets/e1540d7b6aebcebcf2.webp" loading="lazy" decoding="async"></figure>
+<p><em>安装结果与路由</em></p>
+<h2 id="s-a263c87193">第三部分｜自己动手蒸馏</h2>
+<h3 id="s-5e8e84b704">10｜挑对材料</h3>
+<blockquote>
+<p><strong>蒸馏之前先掂量材料里的方法论密度，密度不够，蒸馏出来也是空的。</strong></p>
+</blockquote>
+<p>能不能蒸馏出好东西，主要看材料里有多少可提取的方法论。适合程度从高到低排开：</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>材料</th>
+<th>适合程度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>方法论密度高的书</td>
+<td>★★★★★</td>
+<td>框架清晰、原则可提取，最值得蒸馏</td>
+</tr>
+<tr>
+<td>课程与访谈视频</td>
+<td>★★★★☆</td>
+<td>结构化程度高，先转成文字再进流程</td>
+</tr>
+<tr>
+<td>长视频与播客</td>
+<td>★★★☆☆</td>
+<td>能蒸馏，知识密度看内容</td>
+</tr>
+<tr>
+<td>金句散文类书</td>
+<td>★★☆☆☆</td>
+<td>方法论少，蒸馏出来的东西有限</td>
+</tr>
+<tr>
+<td>小说与叙事文学</td>
+<td>★☆☆☆☆</td>
+<td>没有可提取的方法论，不适合</td>
+</tr>
+</tbody>
+</table></div>
+<p>蒸馏风格同理，先挑一组风格高度统一的参考图。图本身可以题材各异，底色、材质、光线和构图方式必须是一路的，否则反推出来的规律会互相打架。</p>
+<hr />
+<h3 id="s-28352f5850">11｜避开翻车点</h3>
+<blockquote>
+<p><strong>流程是现成的，翻车基本翻在这三处。</strong></p>
+</blockquote>
+<p><strong>读完全书</strong></p>
+<p>Cangjie 有整书骨架和取舍清单两道确认门，没读过书的人在这两处答不上来，关键取舍就全凭 AI 猜。先自己读过一遍，蒸馏出来的技能才完整。蒸馏把读书的收获固化下来，替代不了读书本身。</p>
+<p><strong>收窄触发</strong></p>
+<p>技能描述里写「用于 PPT 设计」，什么活都想接，不该激活的场景也会乱触发。把触发条件写窄一点，再用诱饵测试验证一遍，确认它不会抢别的活。</p>
+<p><strong>留住判断</strong></p>
+<p>技能给的是步骤和选项，方向对不对、这一步要不要执行，最终判断还是在人这里。把技能当成执行力很强的助手，拍板的人始终是自己。</p>
+<hr />
+<h3 id="s-47eaaf090c">12｜上手走一遍</h3>
+<blockquote>
+<p><strong>从书架或收藏夹里挑一件，把这套流程完整走一遍。</strong></p>
+</blockquote>
+<ol>
+<li><strong>挑料</strong>：选一本方法论密度高的好书，或者一组喜欢的好图。</li>
+<li><strong>开始蒸馏</strong>：装上 Cangjie，用一句话指令跑完整条流水线；也可以自己写一套六步提示词。</li>
+<li><strong>验收</strong>：把蒸馏出来的技能装进技能目录，再用一次真实任务试它，跑通了才算完成。</li>
+</ol>
+<p>案例里用的是 Codex，同一套方法搬到 WorkBuddy 一样走得通。</p>
+<h2 id="s-5db9fd7c5a">小结</h2>
+<ol>
+<li><strong>看清同一条路</strong>：图片蒸馏出风格，书本蒸馏出方法，走的是同一条路，反推规律、生成对比、循环收敛、写成技能文件。手上换成课程视频或访谈录音，流程不用重学，换的只是进料。</li>
+<li><strong>攒下可复用规律</strong>：进技能的是规则、清单和自检标准，参考图和原书都不必留在里面。素材用过就能换掉，技能照常跑，一次成功可以接着用在下一件事上。</li>
+<li><strong>守住人的判断</strong>：挑材料时看方法论密度，蒸馏前先自己读一遍，整书骨架和取舍清单两道确认门要拍板，装好后拿一次真实任务验收。</li>
+</ol></div><nav class="lesson-navigation" aria-label="前后课程"><a href="../../lessons/m5-6/"><small>← 上一课</small>AI 一键成稿</a><a href="../../"><small>← 课程目录</small>查看全部课程</a></nav></article><details class="toc" open><summary>本课目录 <span aria-hidden="true">⌄</span></summary><a class="toc-main" href="#s-0be917aa7b">第一部分｜把风格蒸馏成技能</a><a href="#s-4598c16a86">01｜蒸馏出一套配图</a><a href="#s-88407a29af">02｜写出蒸馏指令</a><a href="#s-a165534393">03｜反推再校准</a><a href="#s-961f5a93a7">04｜看看技能文件里有什么</a><a class="toc-main" href="#s-2c66494799">第二部分｜把书蒸馏成技能包</a><a href="#s-e2d83bb06e">05｜蒸馏一本设计书</a><a href="#s-fda495cd44">06｜用现成技能蒸馏</a><a href="#s-f7a687d0a9">07｜筛选与验证</a><a href="#s-1dbb8e1ef8">08｜盲测把关</a><a href="#s-06eb3bb883">09｜装好并试用</a><a class="toc-main" href="#s-a263c87193">第三部分｜自己动手蒸馏</a><a href="#s-5e8e84b704">10｜挑对材料</a><a href="#s-28352f5850">11｜避开翻车点</a><a href="#s-47eaaf090c">12｜上手走一遍</a><a class="toc-main" href="#s-5db9fd7c5a">小结</a></details></div><footer class="footer"><span>左叶 · AI 学习手册</span><span>理解原理 · 动手实践 · 独立判断</span><a class="top-link" href="#main">回到顶部 ↑</a></footer></main></body></html>
