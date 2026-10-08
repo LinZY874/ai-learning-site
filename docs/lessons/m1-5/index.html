@@ -1,29 +1,29 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>查得清，AI才信得过 · 左叶 AI 学习手册</title><meta name="description" content="让交出去的每个结果都经得起检查"><meta name="theme-color" content="#18364b"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2318364b'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='34' fill='white'%3EAI%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="../../styles.css"><script defer src="../../app.js"></script></head><body><a href="#main" class="skip-link">跳转到正文</a><header class="mobile-head"><a class="brand" href="../../" aria-label="左叶 AI 学习手册首页"><span class="mark">AI</span>左叶<span style="font-size:13px;letter-spacing:0;font-weight:400;color:var(--muted)">学习手册</span></a><button class="menu-button" aria-expanded="false" aria-controls="site-sidebar">课程目录</button></header><aside class="sidebar" id="site-sidebar"><a class="brand" href="../../" aria-label="左叶 AI 学习手册首页"><span class="mark">AI</span>左叶<span style="font-size:13px;letter-spacing:0;font-weight:400;color:var(--muted)">学习手册</span></a><div class="brand-note">A FIELD GUIDE TO AI</div><p class="nav-label">学习路径</p><nav class="module-nav" aria-label="课程模块"><a href="../../#module-1" class="active"><span class="nav-num">01</span>AI认知与探索</a><a href="../../#module-2" class=""><span class="nav-num">02</span>AI文字创作</a><a href="../../#module-3" class=""><span class="nav-num">03</span>AI商业视觉</a><a href="../../#module-4" class=""><span class="nav-num">04</span>AI视频通识</a><a href="../../#module-5" class=""><span class="nav-num">05</span>Agent与自动化</a></nav><div class="sidebar-footer"><strong>从理解，到创造。</strong>28 篇图文课程已上线<br>持续更新中的 AI 学习手册</div></aside><main class="page" id="main"><div class="topline"><a class="back-link" href="../../#module-1">← 返回课程目录</a><span>模块 01 / 第 05 课</span></div><div class="reading-layout"><article><header class="article-header"><span class="eyebrow">AI认知与探索</span><h1>查得清，AI才信得过</h1><p class="subtitle">让交出去的每个结果都经得起检查</p><img class="article-cover" src="../../assets/0e7542b0c7c2f2ed86.webp" alt="查得清，AI才信得过课程封面" width="1200" height="512"></header><div class="article-content"><h2 id="s-2a2bcedd83">第一部分｜内容可靠</h2>
 <h3 id="s-e8d2a2dd24">01｜识破一本正经</h3>
 <blockquote>
-<p><strong>把AI的交付内容当作初稿。</strong></p>
+<p><strong>上一课把首稿改到能用，这一课再检查三件事：内容是否可靠、数据能否交出、结果是否稳定。</strong></p>
 </blockquote>
 <p><strong>三个原因，都来自它的默认工作方式</strong></p>
 <ol>
-<li><strong>具体显得可信</strong>：训练数据里，具体数字总跟可信内容出现在一起。它学到的是"具体显得可信"，"具体必须属实"这条没学到。所以它最爱编"环比提升25%"这种数字，具体到个位，笃定到可怕。</li>
-<li><strong>默认给答案</strong>：默认设置下，模型被训练成尽量给答案。信息不够的时候，它宁可编一个把话接圆。空着比错着，更违反它的天性。</li>
+<li><strong>具体显得可信</strong>：“环比提升25%”看起来比“有所提升”更可信，但具体不等于属实。模型可能模仿这种写法，给出没有依据的数字，语气仍很肯定。</li>
+<li><strong>默认给答案</strong>：模型通常倾向于给出完整回答。信息不足时，也可能补出未经确认的细节，让答案看起来完整。</li>
 <li><strong>官方也把输出当草稿</strong>：Google Workspace 的官方指南在自家文档里写着：AI 生成的周报只是草稿，金额、数量、进度百分比这类关键数据，务必逐一核对。指南收尾的提醒更直白：输出可能不可预测，要付诸行动，先复核它清晰、相关、准确，最终产出的责任在你。</li>
 </ol>
 <p>参考：<a href="https://services.google.com/fh/files/misc/workspace_with_gemini_prompting_guide.pdf" target="_blank" rel="noopener noreferrer">Google Workspace with Gemini 官方提示词指南</a>、关于提示词工程的100个问题。</p>
 <hr />
 <h3 id="s-c14f14aa26">02｜事前留出口</h3>
 <blockquote>
-<p><strong>给AI一个拒答的合法出口，它就不必靠编来把话接圆。</strong></p>
+<p><strong>先告诉 AI：信息不足时可以说“无法确定”，不用硬凑结论。</strong></p>
 </blockquote>
 <p><strong>这句可以原样抄</strong></p>
 <pre><code class="language-text">如果现有信息不足以得出结论，请直接说明，不要猜测。
 </code></pre>
 <p><strong>改的是默认策略</strong></p>
-<p>没有拒答出口的时候，它只能用编造把话接圆；有了出口，它可以老实说"无法确定"。答案的可靠性，一下变得可分辨。</p>
+<p>这句要求改变了回答方向：信息不够时，先指出缺口。你便能看清哪些有依据、哪些还需补资料，后面仍要核对。</p>
 <p><strong>加与不加</strong></p>
-<p>没有这句，你得到的是听起来很自信的胡说；有了这句，你得到的是"目前信息不够，我无法确定"。当下有点扫兴，好过三小时后发现关键事实是编的。</p>
+<p>加上这句，预期是让它更愿意说明“目前信息不够”。可以拿同一个事实问题比较两次回答，检查它是否指出缺口，别只看语气是否自信。</p>
 <p><strong>什么时候加</strong></p>
-<p>研究、分析、事实类任务必加；创作类任务别加。写小说要的就是它放飞，加上这句，它给你写个大纲就收工了。</p>
+<p>研究、分析和事实类任务，适合加这句。小说等允许虚构的创作，不必限制合理想象；涉及真实事实的部分仍需说明边界。</p>
 <p><strong>三个变体，按需取用</strong></p>
 <ol>
 <li><strong>要置信度</strong>："信息不足时，说明不足在哪里，并给出置信度（高、中、低）。"</li>
@@ -39,23 +39,23 @@
 <p><strong>检查以下四点</strong></p>
 <ol>
 <li><strong>数字核实</strong>：每个数字都回原始来源核对。
-   * 它最爱编具体的数字，核对时再问一次，它还会把同一个错数字再输出一遍。</li>
+   * 再问一次 AI，可能仍得到同一个错数字，不能代替查原始资料。</li>
 <li><strong>人名职务</strong>：谁说的、谁负责、向谁汇报，逐条核对。
-   * 它会把张总的话安到李总头上，还说得理直气壮。</li>
-<li><strong>引用出处</strong>：点开链接，核对引用是否真实存在、内容是否对得上。链接打不开、内容对不上的，一律当编造处理。</li>
+   * 说话者也可能被弄混，例如把张总的话归到李总名下，需对照原记录。</li>
+<li><strong>引用出处</strong>：点开链接，核对引用是否存在、内容是否支持这句判断。打不开或对不上的，先标为未验证，继续找原始来源。</li>
 </ol>
 <p><img alt="出处呢" src="../../assets/0ee1a3cc12151ecd9b.webp" />
    * 它编的文献，编得有模有样。
 4. <strong>结论强度</strong>：警惕“业界公认”这类词：它们听着权威，背后常常没有依据。见到一处，先查证据，撑不住的，把说法改成“初步观察”这类。
-   * 它给编出来的结论下判断，和给核实过的结论下判断，用的是同一副笃定语气。平时读到“显著增长”“业界共识”，它就是一套正常的专业腔，你不可能凭感觉分得出哪句是编的、哪句有出处。</p>
+   * 没有依据的结论也可能写得很专业。读到“显著增长”“业界共识”，先问证据在哪里、能支持多强的结论，再决定是否需要收弱说法。</p>
 <h4 id="s-206662e6bc">换另一个AI先审</h4>
 <blockquote>
 <p><strong>给查问题的AI具体的要求。</strong></p>
 </blockquote>
 <p><strong>换另一个AI先审</strong></p>
 <ol>
-<li><strong>换模型找盲点</strong>：同一个模型对同一类任务，走同一条默认路。它看不见的，另一个模型常看得见。所以把稿子交给另一个模型，让它找问题，别让它重写。</li>
-<li><strong>给一把具体的尺子</strong>：说清楚要查哪几项（数字有没有出处、人名职务对不对、结论有没有依据），让它一项一项打分，每一项都说出理由。不要它给总分，总分好给，但一个数看不出来哪一项有问题，分开打才露出来。</li>
+<li><strong>换模型找盲点</strong>：同一个模型可能重复漏掉同类问题。换一个模型审稿，有机会发现盲点；先让它找问题，不要直接重写，再由你回原文核对。</li>
+<li><strong>给一把具体的尺子</strong>：指定检查项：数字出处、人名职务、结论依据。让它逐项给分并说明理由，比只给总分更容易看出问题在哪里。</li>
 <li><strong>每条数据有出处，没有就标[需验证]</strong>：每条数据问一句从哪来的。没有出处的，不删、不空着，标出来。</li>
 </ol>
 <blockquote>
@@ -65,10 +65,10 @@
 <h2 id="s-357771e1bd">第二部分｜数据安全</h2>
 <h3 id="s-d1fcb8a728">04｜分清数据级别</h3>
 <blockquote>
-<p><strong>数据离开你的电脑那一刻，就不受你控制了。</strong></p>
+<p><strong>把资料交给云端 AI 前，先确认哪些信息可以离开你的电脑。</strong></p>
 </blockquote>
 <p><strong>风险在哪</strong></p>
-<p>贴进云端服务的每段话，都离开你的控制范围：存在别人的服务器上，还可能被拿去训练模型。</p>
+<p>输入云端服务的内容会由服务方处理和存储。是否用于训练，要看产品政策与设置；交资料前先按下面的级别判断。</p>
 <p><strong>分级对照</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -101,21 +101,21 @@
 </tr>
 </tbody>
 </table></div>
-<p>最危险的泄密，是让它"总结这个客户的全部往来"：所有碎片被集中成一个可复制的摘要，敏感度不降反升。</p>
+<p>“总结这个客户的全部往来”尤其要小心：分散的信息会汇成一份可复制的摘要。整理得更短，并不意味着敏感度降低。</p>
 <hr />
 <h3 id="s-903a0fa4df">05｜数据脱敏</h3>
 <figure><img alt="交出模板，留下内容" src="../../assets/f48668f8494238afea.webp" loading="lazy" decoding="async"></figure>
 <blockquote>
-<p><strong>多数办公任务要的是结构、逻辑和文笔，不是那几个不能说的数字。让AI处理"形状"，不交出"内容"。</strong></p>
+<p><strong>写框架、理逻辑、改文笔，往往不需要真实姓名和金额。让 AI 处理这些“形状”，把敏感“内容”留在本地。</strong></p>
 </blockquote>
 <p><strong>三个随手能用的手法</strong></p>
 <ol>
 <li><strong>代号化</strong>：把真实客户名和具体金额换成"客户A公司、金额X万元"。AI 照样能帮你分析结构和逻辑，它只是不知道具体是谁。</li>
-<li><strong>模糊化</strong>：把精确数字换成量级，"预算87万"换成"百万级预算"。多数分析结论不受影响。</li>
+<li><strong>模糊化</strong>：把精确数字换成量级，例如“预算87万”换成“百万级预算”。适合讨论大方向；需要精确计算时，仍要用真实数字在本地核对。</li>
 <li><strong>拆分贴</strong>：先让AI给框架、模板或结构，这些不需要真实数据。真实数据留在本地，你自己填。比如让它设计客户分级框架和空白表格，客户名单你自己填。</li>
 </ol>
 <blockquote>
-<p><strong>脱敏之后，AI照样能干活，你的底牌还在手里。</strong></p>
+<p><strong>先判断任务需要哪些信息，再脱敏。结构和文案可以交给 AI，敏感数据留给自己填入和核对。</strong></p>
 </blockquote>
 <hr />
 <h2 id="s-ca234e95fb">第三部分｜结果稳定</h2>
@@ -125,16 +125,16 @@
 </blockquote>
 <p><strong>三查：从容易查的开始</strong></p>
 <ol>
-<li><strong>模型是否更新</strong>：厂商升级了模型版本，行为跟着变。你以为提示词坏了，其实是提示词下面的地面动了。先看模型版本有没有被切换。</li>
-<li><strong>提示词是否自身冲突</strong>：多轮小修，每次都有道理，叠起来互相打架。从最近一次改动开始，改回一处，跑一个任务看恢没恢复正常，恢复正常的那处改动就是祸首。</li>
-<li><strong>示例是否匹配提示词</strong>：指令改了三版，示例还是半年前的，模型夹在新旧两个标准之间，无所适从。把指令的每条要求抄下来，对着每个示例问一句：它满足吗？</li>
+<li><strong>模型是否更新</strong>：先看模型版本有没有切换。厂商更新后，回答方式也可能改变，不一定是原提示词写错了。</li>
+<li><strong>提示词是否自身冲突</strong>：多轮补充的要求可能互相冲突。从最近一次改动开始，每次撤回一处，用同一个任务试跑，观察哪处改动影响了结果。</li>
+<li><strong>示例是否匹配提示词</strong>：指令改了，示例也要跟着检查。把当前要求列出来，逐个对照示例：格式、内容和判断标准都符合吗？</li>
 </ol>
 <blockquote>
 <p><strong>一个真实事故</strong>：客服组用AI自动分拣客户消息，分成投诉、退款、咨询几类。提示词早就改成了“分类的时候把理由也写出来”，可给AI看的“示范消息”还是半年前的旧样子，每条只有一个分类词，没有理由。没人动它，没报错，也没工单，AI每天照常分类，只是结果慢慢不对了，每100条消息多错15条，直到有人对账才发现。把示范消息改成新样子，一改，大部分就回来了。</p>
 </blockquote>
 <p><strong>先留底，再重写</strong></p>
 <figure><img alt="新要求与旧示例拉扯" src="../../assets/e4dda5bf245d6c0506.webp" loading="lazy" decoding="async"></figure>
-<p>三查之后还找不到原因，就重写提示词。重写提示词不是新写一份就完事，先把现在还能用的几个任务和AI给的结果留个底。新版写出来，拿同样的任务再跑一遍，新结果和旧结果逐条对比：明显更好，以后用新版；不明显，继续用旧版。</p>
+<p>三查后仍找不到原因，再考虑重写。先保存几项常用任务和旧版结果，用同样的资料测试新版，逐条比较。明显更好就换新版；没有改善，就保留旧版继续查。</p>
 <hr />
 <h3 id="s-187dd75428">07｜动态修改</h3>
 <h4 id="s-af4e672717">根据模型调整提示词</h4>
@@ -143,9 +143,9 @@
 </blockquote>
 <p><strong>先跑几个常用任务</strong>：新老模型两边跑同样的任务，对比结果，再动手调。</p>
 <p><strong>一个调口味例子</strong></p>
-<p>一个周报总结提示词，在A模型上跑得好好的，换到B模型，格式乱了，语气变正式了。不用重写，就做两件事：加一句“用标题和列表排好版，不超过300字”，再把提示词里的两个例子换成自己惯常的风格。再跑一遍，就顺了。</p>
+<p>例如，周报提示词换到B模型后，格式乱了、语气更正式。可以先加“用标题和列表排好版，不超过300字”，再把两个例子换成自己的常用文风。重新试跑，检查这两处问题是否改善。</p>
 <p><strong>三家口味</strong></p>
-<p>不是必须照做的标准，是各家最好使的方向。</p>
+<p>下面是可尝试的调整方向，具体是否有效，仍要用你的任务测试。</p>
 <ol>
 <li>
 <p><strong>Claude系</strong>：
@@ -172,7 +172,7 @@
 </ol>
 <h4 id="s-d6718241fa">根据环境重写提示词</h4>
 <blockquote>
-<p><strong>输入框外面，还套着另一套预设规则和工具：同一个提示词，网页版上跑得通，接到程序里，输出可能完全不一样。</strong></p>
+<p><strong>提示词还会受到产品预设规则和工具的影响。同一句话从网页搬到程序里，结果可能变化，需要在实际环境中再测试。</strong></p>
 </blockquote>
 <p><strong>案例</strong></p>
 <p>有人把网页上调好的图像提示词原样接到程序里，产出完全不同。折腾来折腾去，怎么调都没用，最后把图像功能从项目里整个删了。</p>
@@ -189,10 +189,10 @@
 <hr />
 <h2 id="s-5db9fd7c5a">小结</h2>
 <ol>
-<li><strong>一本正经，先查再用</strong>：数字越具体、语气越笃定，越像真的，也越危险；结果要逐条查过才可用。</li>
+<li><strong>语气再肯定，也要先查再用</strong>：把输出当初稿，逐项查数字、人名职务、引用和结论，别用语气代替证据。</li>
 <li><strong>交出形状，留下内容</strong>：敏感数据做脱敏，让AI处理结构和逻辑，底牌留在自己手里。</li>
 <li><strong>先找原因，再谈重写</strong>：提示词的结果突然变了，先按顺序查模型、提示词、示例，找到原因再决定怎么改。</li>
 </ol>
 <blockquote>
-<p><strong>AI交付流畅，你交付可信。</strong></p>
+<p><strong>拿一份实际输出练习“四查”，再看输入资料是否脱敏、提示词与示例是否一致。让流畅的初稿成为可信的交付。</strong></p>
 </blockquote></div><nav class="lesson-navigation" aria-label="前后课程"><a href="../../lessons/m1-4/"><small>← 上一课</small>说到位，AI才用得上</a><a href="../../lessons/m2-1/"><small>下一课 →</small>AI 最强四件套</a></nav></article><details class="toc" open><summary>本课目录 <span aria-hidden="true">⌄</span></summary><a class="toc-main" href="#s-2a2bcedd83">第一部分｜内容可靠</a><a href="#s-e8d2a2dd24">01｜识破一本正经</a><a href="#s-c14f14aa26">02｜事前留出口</a><a href="#s-ef7d87bd9f">03｜事后过四查</a><a class="toc-main" href="#s-357771e1bd">第二部分｜数据安全</a><a href="#s-d1fcb8a728">04｜分清数据级别</a><a href="#s-903a0fa4df">05｜数据脱敏</a><a class="toc-main" href="#s-ca234e95fb">第三部分｜结果稳定</a><a href="#s-37a9a13ff3">06｜查找原因</a><a href="#s-187dd75428">07｜动态修改</a><a class="toc-main" href="#s-5db9fd7c5a">小结</a></details></div><footer class="footer"><span>左叶 · AI 学习手册</span><span>理解原理 · 动手实践 · 独立判断</span><a class="top-link" href="#main">回到顶部 ↑</a></footer></main></body></html>
